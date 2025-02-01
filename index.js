@@ -16,6 +16,10 @@ app.post("/posts", controllers.createPost);
 
 app.get("/posts/:author", controllers.getPostByAuthor);
 
+app.put("/posts/:author",controllers.updatePostByAuthor);
+
+app.delete("/posts/:author",controllers.deletePostByAuthor)
+
 app.get("/", (req, res) => {
   res.send("helloworld");
 });
